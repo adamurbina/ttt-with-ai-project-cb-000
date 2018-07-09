@@ -18,7 +18,9 @@ module Players
                     combo_moves << load_combo
                 }
                 combo_moves.each_with_index{ |combo, index|
-                    combo.count(self.token) == 2 && 
+                    if combo.count(self.token) == 2 && combo.count(" ") == 1
+                        find_index = 
+                    end
                 }
             end
         end
