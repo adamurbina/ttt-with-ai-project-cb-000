@@ -9,12 +9,16 @@ module Players
             if board.cells[4] == " "
                 move = "5"
             else
+                combo_moves = []
                 game.WIN_COMBINATIONS.each{|combo|
-                    x = board.cells[combo[0]]
-                    y = board.cells[combo[1]]
-                    z = board.cells[combo[2]]
-
-                    if 
+                    load_combo = []
+                    load_combo << board.cells[combo[0]]
+                    load_combo << board.cells[combo[1]]
+                    load_combo << board.cells[combo[2]]
+                    combo_moves << load_combo
+                }
+                combo_moves.each_with_index{ |combo, index|
+                    combo.count(self.token) == 2 && 
                 }
             end
         end
