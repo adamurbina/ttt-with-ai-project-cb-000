@@ -32,7 +32,7 @@ module Players
                     end
                 }
                 combo_moves.each_with_index{ |combo, index|
-                    if combo.count(self.token) == 0 && combo.count(" ") == 2
+                    if combo.count(game.player_2.token) == 0 && combo.count(" ") == 2
                         inner_index = combo.index(" ")
                         outer_index = index
                         move = game.WIN_COMBINATIONS[outer_index][inner_index]
