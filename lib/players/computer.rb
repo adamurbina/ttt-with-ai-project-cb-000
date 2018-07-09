@@ -21,7 +21,7 @@ module Players
                     if combo.count(self.token) == 2 && combo.count(" ") == 1
                         inner_index = combo.index(" ")
                         outer_index = index
-                        
+                        move = game.WIN_COMBINATIONS[outer_index][inner_index]
                     end
                 }
             end
