@@ -19,7 +19,9 @@ module Players
                 }
                 combo_moves.each_with_index{ |combo, index|
                     if combo.count(self.token) == 2 && combo.count(" ") == 1
-                        find_index = 
+                        inner_index = combo.index(" ")
+                        outer_index = index
+                        
                     end
                 }
             end
